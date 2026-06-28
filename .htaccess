@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^tic-tac-toe-online\.com [NC]
+RewriteRule ^(.*)$ https://www.tic-tac-toe-online.com/$1 [L,R=301]
+ErrorDocument 404 /404.html

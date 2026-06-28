@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/tictactoe-icon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Internal Error</title>
+    <link rel="stylesheet" href="styles/500.css">
+</head>
+<body>
+
+<header>
+    <h1>500</h1>
+    <p>Internal Server Error</p>
+</header>
+
+<nav>
+    <a href="index.html"><img src="images/tictactoe-icon.png" alt="Home"></a>
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<section>
+    <p>The server encountered an unexpected condition that prevented it from fulfilling the request.</p>
+
+    <p>Want to try again? click here</p>
+    <button class="GoBackButton" onclick="window.location.href='https://www.indus-atelier.de';">
+    Retry
+  </button>
+  <p class="margin"></p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Indus Atelier – All rights reserved</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    if (navLinks) {
+        navLinks.classList.toggle('show');
+    }
+}
+</script>
+
+</body>
+</html>
